@@ -1,0 +1,55 @@
+body {
+    background: linear-gradient(to bottom, rgba(11,168,110,1), rgba(33,148,145,1));
+}
+.step {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.75em;
+    line-height: 1.5em;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 25px;
+    margin: -25px auto 0 auto;
+    width: 800px;
+    height: auto;
+    color: #ffffff;
+}
+.impress-enabled .step {
+    margin: 0;
+    opacity: 0;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+    background: none;
+}
+.impress-enabled .step.active {
+    opacity: 1;
+}
+img {
+  max-width: 100%;
+  border: 1px solid black;
+}
+#dia1 img, #dia18 img {
+  max-width: 100%;
+  width: 70%;
+}
+#dia17 img {
+  max-width: 100%;
+  width: 50%;
+}
+.impress-on-overview .step {
+    opacity: 1;
+    cursor: pointer;
+}
+.impress-enabled {
+    pointer-events: none;
+}
+.impress-enabled #impress {
+    pointer-events: none;
+}
